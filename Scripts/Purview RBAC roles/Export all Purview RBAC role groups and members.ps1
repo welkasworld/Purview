@@ -139,7 +139,7 @@ $outFile = ".\Purview_RoleGroups_Members_$timestamp.csv"
 $Report | Sort-Object "Role Group" | Out-GridView -Title "Microsoft Purview Role Group Memberships"
 $Report | Sort-Object "Role Group" | Export-Csv -Path $outFile -NoTypeInformation -Encoding UTF8
 
-Write-Host "`n✅ Export complete! File saved as: $outFile" -ForegroundColor Green
+Write-Host "Export complete! File saved as: $outFile" -ForegroundColor Green
 
 #------------------------------------------------------------
 # 8️- Disconnect sessions to clean up
@@ -150,4 +150,4 @@ try {
     Remove-PSSession -ErrorAction SilentlyContinue
 } catch {}
 
-Write-Host "`nAll sessions closed. Script finished successfully." -ForegroundColor Cyan
+Write-Host "All sessions closed. Script finished successfully." -ForegroundColor Cyan
