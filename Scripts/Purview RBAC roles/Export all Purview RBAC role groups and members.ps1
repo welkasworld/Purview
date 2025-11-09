@@ -19,7 +19,7 @@ Date: 2025-11-02
 .REQUIREMENTS
 - PowerShell 5.1 or later
 - ExchangeOnlineManagement module (auto-installs if missing)
-- Global Administrator or Compliance Administrator rights
+- Organization Management (RBAC) or Entra ID Global Admin
 - Interactive sign-in (supports MFA)
 
 .NOTES
